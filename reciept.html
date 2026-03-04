@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Receipt</title>
+</head>
+<body>
+
+<h2>Create Receipt</h2>
+
+<form action="save_receipt.php" method="POST">
+    Store Name: <input type="text" name="store_name"><br><br>
+    Receipt #: <input type="text" name="receipt_number"><br><br>
+    Date: <input type="date" name="receipt_date"><br><br>
+
+    <h3>Items</h3>
+
+    Item 1: <input type="text" name="item_name[]">
+    Qty: <input type="number" name="quantity[]">
+    Price: <input type="number" step="0.01" name="price[]"><br><br>
+
+    Item 2: <input type="text" name="item_name[]">
+    Qty: <input type="number" name="quantity[]">
+    Price: <input type="number" step="0.01" name="price[]"><br><br>
+
+    Subtotal: <input type="number" step="0.01" name="subtotal"><br>
+    Tax: <input type="number" step="0.01" name="tax"><br>
+    Total: <input type="number" step="0.01" name="total"><br><br>
+
+    <button type="submit">Save Receipt</button>
+</form>
+
+</body>
+</html>
